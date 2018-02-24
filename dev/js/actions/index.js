@@ -12,11 +12,11 @@ export const selectUser = (user) => {
 
 export const getUserInfo = () => {
       // Make a request for a user with a given ID
-    const userInfo = axios.get('https://jsonplaceholder.typicode.com/posts/1')
+    const userInfo = axios.get('https://jsonplaceholder.typicode.com/users')
         .then(function (response) {
           return {
             type: types.USERS_REQUEST,
-            payload: response
+            payload: response.data
           }
         })
         .catch(function (error) {
