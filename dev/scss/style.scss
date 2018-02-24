@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 $primary: #006699;
 
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
 h2 {
 	color: $primary;
 }
