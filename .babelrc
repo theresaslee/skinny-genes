@@ -7,5 +7,6 @@
     "development": {
       "presets": []
     }
-  }
+  },
+	"plugins": ["react-hot-loader/babel"]
 }

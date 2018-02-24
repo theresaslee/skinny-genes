@@ -10,6 +10,7 @@ const App = () => (
         <hr />
         <h2>User Details</h2>
         <UserDetails />
+        <h2>Test Div</h2>
     </div>
 );
 
