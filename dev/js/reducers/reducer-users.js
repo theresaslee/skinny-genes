@@ -1,4 +1,5 @@
 import * as types from '../constants.js'
+import sampleData from '../dummy.js'
 
 
 const userState = {
@@ -58,11 +59,11 @@ export default function () {
 */
 
 const userInfo = function userInfo (state = userState, action = {}) {
-  switch (action.type) {
+    switch (action.type) {
     case types.USERS_REQUEST:
     return {
       ...state,
-      users: action.payload,
+      users: sampleData,
       isLoaded: true
     }
     case types.USER_FAILURE:

@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 class Traits extends Component {
     render() {
         if (!this.props.user) {
-            return (<div>Select a user...</div>);
+            return (<div></div>);
         }
         let listInfo = this.props.user[this.props.type];
         return (

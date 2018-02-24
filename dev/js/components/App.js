@@ -5,14 +5,15 @@ import Traits from '../containers/traits';
 require('../../scss/style.scss');
 
 const App = () => (
-    <div className="container-fluid">
+    <div className="container-fluid wrap">
         <h2>User List</h2>
         <UserList />
         <hr />
-        <h2>User Details</h2>
         <Patient />
-        <h2>Traits</h2>
+        <hr />
         <Traits type="allergies"/>
+        <hr />
+        <Traits type="healthHistory"/>
     </div>
 );
 

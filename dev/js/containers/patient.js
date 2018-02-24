@@ -8,7 +8,7 @@ import {connect} from 'react-redux';
 class Patient extends Component {
     render() {
         if (!this.props.user) {
-            return (<div>Select a user...</div>);
+            return (<div></div>);
         }
         return (
             <div id="profile" className="container">

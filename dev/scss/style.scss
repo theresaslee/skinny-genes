@@ -4,6 +4,14 @@ $primary: #006699;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.wrap {
+    background-color: #f7f7f7;
+}
+
+#traits {
+    background-color: #ffffff;
+}
+
 h2 {
     color: $primary;
 }
@@ -76,7 +84,7 @@ img {
 
 .values {
     font-family: WorkSans;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
