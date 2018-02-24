@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Loader from 'react-loader';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {getUserInfo, selectUser} from '../actions/index'
@@ -9,13 +10,13 @@ class UserList extends Component {
       this.props.getUserInfo()
     }
     renderList() {
-        return this.props.users.map((user) => {
+        return this.props.userData.users.map((user) => {
             return (
                 <li
                     key={user.id}
                     onClick={() => this.props.selectUser(user)}
                 >
-                    {user.first} {user.last}
+                    {user.name}
                 </li>
             );
         });
@@ -23,9 +24,11 @@ class UserList extends Component {
 
     render() {
         return (
-            <ul>
-                {this.renderList()}
-            </ul>
+            <Loader loaded={this.props.userData.isLoaded}>
+              <ul>
+                  {this.renderList()}
+              </ul>
+            </Loader>
         );
     }
 
@@ -34,8 +37,9 @@ class UserList extends Component {
 // Get apps state and pass it as props to UserList
 //      > whenever state changes, the UserList will automatically re-render
 function mapStateToProps(state) {
+    console.log(state)
     return {
-        users: state.users
+        userData: state.userData
     };
 }
 
