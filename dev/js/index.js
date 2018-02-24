@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 import promise from 'redux-promise';
 import createLogger from 'redux-logger';
 import allReducers from './reducers';
-import App from './components/App';
+import App from './containers/App';
 import {AppContainer} from 'react-hot-loader'
 
 const logger = createLogger();

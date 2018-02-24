@@ -8,7 +8,7 @@ $primary: #006699;
     background-color: #f7f7f7;
 }
 
-#traits {
+.traits {
     background-color: #ffffff;
 }
 
@@ -93,3 +93,29 @@ img {
     text-align: left;
     color: #2d2d2d;
   }
+
+.Rectangle {
+  width: 345px;
+  height: 40px;
+  background-color: #f74732;
+}
+
+.BLOOD-CLOT-RISK {
+  width: 212px;
+  height: 24px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.blood-clot-info {
+  width: 345px;
+  height: 48px;
+  background-color: #ffffff;
+}

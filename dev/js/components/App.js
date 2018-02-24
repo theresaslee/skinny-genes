@@ -1,4 +1,5 @@
 import React from 'react';
+import Alert from './Alert'
 import UserList from '../containers/user-list';
 import Patient from '../containers/patient';
 import Traits from '../containers/traits';
@@ -8,11 +9,12 @@ const App = () => (
     <div className="container-fluid wrap">
         <h2>User List</h2>
         <UserList />
-        <hr />
+        <br />
         <Patient />
-        <hr />
+        <br />
+        <Alert />
         <Traits type="allergies"/>
-        <hr />
+        <br />
         <Traits type="healthHistory"/>
     </div>
 );

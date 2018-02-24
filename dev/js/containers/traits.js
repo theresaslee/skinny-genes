@@ -8,7 +8,7 @@ class Traits extends Component {
         }
         let listInfo = this.props.user[this.props.type];
         return (
-            <h2 id="traits" className="container">
+            <h2 className="container traits">
                 <div className="row">
                     <div className="title col-sm-12 col-xs-12"> {listInfo.title} </div>
                     <ul className="values col-sm-12 col-xs-12">
