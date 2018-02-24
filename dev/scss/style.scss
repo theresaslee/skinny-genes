@@ -1,10 +1,87 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Work+Sans');
 $primary: #006699;
-
 * {
     font-family: 'Josefin Sans', sans-serif;
 }
+
 h2 {
-	color: $primary;
+    color: $primary;
 }
+
+#profile {
+    //width: 345px;
+    //height: 163px;
+    background-color: #ffffff;
+}
+
+.name {
+    //width: 325px;
+    //height: 33px;
+    font-family: WorkSans;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #2d2d2d;
+}
+
+.attr {
+    //width: 55px;
+    //height: 19px;
+    font-family: WorkSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #737373;
+}
+
+.value {
+    //width: 111px;
+    //height: 19px;
+    font-family: WorkSans;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #4a90e2;
+}
+
+img {
+    border-radius: 50%;
+    float: right;
+}
+
+.title {
+    background-color: #4a90e2;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.values {
+    font-family: WorkSans;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d2d2d;
+  }
